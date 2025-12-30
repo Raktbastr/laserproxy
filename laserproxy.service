@@ -1,0 +1,12 @@
+[Unit]
+Description=Laser Scouter API Proxy
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/laserproxy.sh
+Type=simple
+Restart=always
+RestartSec = 5
+
+[Install]
+WantedBy=multi-user.target
